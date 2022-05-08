@@ -1,9 +1,27 @@
+@font-face {
+  font-family: "Palash";
+  src: url("../assets/fonts/Palash-Regular.otf")
+}
+:root {
+  --dark-red: #6D1E12;
+  --salmon-red: #B35543;
+}
+
 html,
-body {
+* {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  font-family: poppins, Helvetica, Arial, sans-serif;
+  background-color: #F3E9E0;
+}
+
+h1, h2 {
+  font-family: Palash, serif;
+  color: var(--salmon-red);
+  font-weight: 400;
 }
 
 a {
