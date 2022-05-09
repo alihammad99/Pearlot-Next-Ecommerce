@@ -18,10 +18,16 @@ body{
   background-color: #F3E9E0;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: Palash, serif;
   color: var(--salmon-red);
   font-weight: 400;
+}
+h3 {
+  font-size: 1.875rem;
+}
+h5 {
+  color: var(--salmon-red);
 }
 
 a {

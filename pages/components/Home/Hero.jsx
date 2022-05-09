@@ -15,7 +15,7 @@ const Hero = () => {
     <Container>
       <HeroContainer>
         <LeftContainer>
-          <Bio style={{ transform: 'translateY(40px)'}}>
+          <Bio style={{ transform: "translateY(40px)" }}>
             Pearlot Vinader celebrates women by making them feel individual and
             confident every day.
           </Bio>
@@ -32,7 +32,7 @@ const Hero = () => {
         </HeroPhotoContainer>
         <RightContainer>
           <Title>PEARL</Title>
-          <Bio style={{ transform: 'translateY(-40px)'}}>
+          <Bio style={{ transform: "translateY(-40px)" }}>
             Because luxury is a feeling no longer defined by expense or
             exclusivity, but by expression and exceptional quality of
             craftsmanship.
