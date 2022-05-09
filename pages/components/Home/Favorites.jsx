@@ -5,8 +5,8 @@ import {
   TitleContainer,
   CardTitle,
   CardPrice,
-  Cards
-} from "./Favorites.style";
+  Cards,
+} from "./styles/Favorites.style";
 import Container from "../Layout/Container";
 const Favorites = () => {
   return (
@@ -41,11 +41,7 @@ const Favorites = () => {
           </div>
           <div>
             <div>
-              <CardImage
-                src="/favorites/rings.jpg"
-                width="364"
-                height="364"
-              />
+              <CardImage src="/favorites/rings.jpg" width="364" height="364" />
             </div>
             <CardTitle>Fascinating Ring</CardTitle>
             <CardPrice>$42</CardPrice>

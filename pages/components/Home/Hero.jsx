@@ -9,7 +9,7 @@ import {
   HeroPhoto,
   Bio,
   Title,
-} from "./Hero.style";
+} from "./styles/Hero.style";
 const Hero = () => {
   return (
     <Container>

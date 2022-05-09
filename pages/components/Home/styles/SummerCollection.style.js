@@ -47,7 +47,6 @@ export const Paragraph = styled.p`
 `;
 
 export const SCTitle = styled.h3`
-line-height: 3.438rem;
-font-size: 2.188rem;
-
+  line-height: 3.438rem;
+  font-size: 2.188rem;
 `;

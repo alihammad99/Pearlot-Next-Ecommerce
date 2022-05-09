@@ -9,7 +9,8 @@ import {
   RightSide,
   Paragraph,
   SCTitle,
-} from "./SummerCollection.style";
+} from "./styles/SummerCollection.style";
+
 const SummerCollection = () => {
   return (
     <Section>

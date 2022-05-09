@@ -35,7 +35,7 @@ export const BtnContainer = styled.div`
   background: none;
   position: relative;
   width: 9.375rem;
-  background: ${(props) => (props.left ? "#f00" : "#00a8ff")};
+  transform: ${(props) => (props.left && "translateX(42px)")};
   &:hover ${ArrowContainer} {
     left: -50px;
   }
