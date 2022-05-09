@@ -21,12 +21,19 @@ export const MenuListItems = styled.li`
   color: #000;
   opacity: 0.5;
   transition: all .2s ease;
-  margin: 0 1.156rem;
+  // margin: 0 1.156rem;
+  min-width: 90px;
 
   &:hover {
     opacity: 0.6;
     font-weight: 500;
-    margin: 0 1.140rem;
+  }
+  span { 
+    padding: 0.2px 5px;
+    margin: 0;
+    border-radius: 50%;
+    border: 1px solid #000;
+    font-size: 0.8rem;
   }
 `;
 

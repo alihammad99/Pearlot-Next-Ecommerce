@@ -14,9 +14,9 @@ const Nav = () => {
 
         <Logo>PEARLOT</Logo>
 
-        <MenuList style={{ justifyContent: 'flex-end' }}>
-          <MenuListItems>Search</MenuListItems>
-          <MenuListItems style={{marginRight: 0}}>
+        <MenuList>
+          <MenuListItems style={{ transform: 'translateX(95px)'}}>Search</MenuListItems>
+          <MenuListItems style={{ transform: 'translateX(95px)'}}>
             Cart <span>0</span>
           </MenuListItems>
         </MenuList>

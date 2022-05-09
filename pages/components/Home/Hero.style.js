@@ -7,23 +7,30 @@ export const HeroContainer = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
+  height: 31.25rem;
+  margin-top: 4.5rem;
 `;
 
 export const LeftContainer = styled.div`
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  align-items: right;
+  place-items: flex-end;
 `;
 
 export const RightContainer = styled.div`
   display: flex;
   flex-direction: column;
+  height: 47%;
   justify-content: space-between;
-  align-items: left;
+  place-items: flex-start;
+  place-self: flex-end;
 `;
 
 export const HeroPhotoContainer = styled.div`
+  min-height: 20.875rem;
+  min-width: 15.338rem;
   height: 31.25rem;
   width: 23rem;
   border-top-left-radius: 50rem;
@@ -34,8 +41,8 @@ export const HeroPhotoContainer = styled.div`
 export const HeroPhoto = styled(Image)`
   position: fixed;
   object-fit: cover;
-  transform: scale(1.5) translate(-30px, -45px);
-//   object-position: 100% 70%;
+  transform: scale(1.5) translate(-43px, -60px);
+  //   object-position: 100% 70%;
   margin: 0 auto;
 `;
 
@@ -45,6 +52,8 @@ export const Bio = styled.p`
   color: #000;
   line-height: 1.313rem;
   opacity: 0.35;
+  width: 196px;
+  font-weight: 300;
 `;
 
 export const Title = styled.h1`
