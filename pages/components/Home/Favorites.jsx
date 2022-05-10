@@ -8,12 +8,12 @@ import {
   Cards,
 } from "./styles/Favorites.style";
 import Container from "../Layout/Container";
-const Favorites = () => {
+const Favorites = ({title}) => {
   return (
     <Container>
       <div>
         <TitleContainer>
-          <h3>Our Favorites</h3>
+          <h3>{title}</h3>
           <Primary text="See All" />
         </TitleContainer>
         <Cards>

@@ -107,3 +107,10 @@ export const ButtonsContainer = styled.div`
   flex-direction: row;
   gap: 1.563rem;
 `;
+
+export const Bg = styled.section`
+  width: 100%;
+  margin-bottom: 6rem;
+  padding 7rem 0;
+  background: #ECE2D6;
+`;

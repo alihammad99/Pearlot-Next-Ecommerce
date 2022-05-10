@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Palash";
-  src: url("../assets/fonts/Palash-Regular.otf")
+  src: url("../assets/fonts/Palash-Regular.otf");
 }
 :root {
-  --dark-red: #6D1E12;
-  --salmon-red: #B35543;
+  --dark-red: #6d1e12;
+  --salmon-red: #b35543;
 }
 
 html,
@@ -13,12 +13,14 @@ html,
   margin: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: Poppins, Helvetica, Arial, sans-serif;
-  background-color: #F3E9E0;
+body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  background-color: #f3e9e0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: Palash, serif;
   color: var(--salmon-red);
   font-weight: 400;

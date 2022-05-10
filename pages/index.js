@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Nav />
       <Hero />
-      <Favorites />
+      <Favorites title="Our Favorites" />
       <SummerCollection />
       <Categories />
       <About />

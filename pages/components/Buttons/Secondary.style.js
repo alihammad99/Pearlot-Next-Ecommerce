@@ -8,12 +8,13 @@ export const Button = styled.button`
   opacity: 0.6;
   font-family: Poppins;
   text-align: center;
-  text-transform: uppercase-case;
+  text-transform: uppercase;
+  font-weight: 400;
   background: none;
   cursor: pointer;
-  transition: background 0.15s ease;
+  transition: background 0.2s ease;
 
   &:hover {
-    background: rgba(200, 0, 0, 0.2);
+    background: rgba(200, 0, 0, 0.12);
   }
 `;
