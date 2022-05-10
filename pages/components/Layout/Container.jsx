@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ContainerStyle = styled.div`
 
     max-width:1150px;
-    width: 90%;
+    width: 97%;
     margin: 0 auto;
 
 `

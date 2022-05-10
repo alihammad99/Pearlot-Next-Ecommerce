@@ -13,6 +13,8 @@ export const SCContainer = styled.div`
   justify-content: flex-start;
   gap: 7.813rem;
   align-items: center;
+
+  justify-content: ${(props) => (props.justify && "space-between")};
 `;
 
 export const ImageContainer = styled.div`
