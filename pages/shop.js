@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import Nav from "./components/Layout/Nav";
+import Hero from "./components/Shop/Hero";
+import CategoriesNav from "./components/Shop/CategoriesNav";
+import Products from "./components/Shop/Products";
+import Footer from "./components/Layout/Footer";
 
-const shop = () => {
+const Shop = () => {
   return (
-    <div>shop</div>
-  )
-}
+    <div>
+      <Nav />
+      <Hero />
+      <CategoriesNav />
+      <Products />
+      <Footer />
+    </div>
+  );
+};
 
-export default shop
+export default Shop;
