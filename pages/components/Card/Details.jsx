@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import Container from "../Layout/Container";
 import Count from "../Buttons/Count";
 import Secondary from "../Buttons/Secondary";
-import Favorites from "../Home/Favorites";
-import Footer from "../Layout/Footer";
 import {
   FlexBox,
   LeftSide,
@@ -17,10 +15,12 @@ import {
   Delivery,
   ButtonsContainer,
   Quantity,
-  Bg,
 } from "./styles/Details.style";
 
+export const qn = createContext();
 const Details = () => {
+  const [quantityNumber, setQuantityNumber] = useState({quantity: 1});
+
   return (
     <>
       <Container>
@@ -58,20 +58,18 @@ const Details = () => {
               pearl necklace sets, to earrings, we've got the pieces to add a
               dose of luxury to your looks.
             </Delivery>
-            <Quantity>
-              <span>Quantity</span>
-              <ButtonsContainer>
-                <Count />
-                <Secondary text="Add to Cart" />
-              </ButtonsContainer>
-            </Quantity>
+            <qn.Provider value={quantityNumber}>
+              <Quantity>
+                <span>Quantity</span>
+                <ButtonsContainer>
+                  <Count value={quantityNumber} setValue={setQuantityNumber} />
+                  <Secondary text="Add to Cart" />
+                </ButtonsContainer>
+              </Quantity>
+            </qn.Provider>
           </RightSide>
         </FlexBox>
       </Container>
-      <Bg>
-        <Favorites title="You may also like" />
-      </Bg>
-      <Footer />
     </>
   );
 };

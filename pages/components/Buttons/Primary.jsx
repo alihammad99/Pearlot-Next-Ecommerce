@@ -4,7 +4,7 @@ import {
   Arrow,
   BtnContainer,
   ArrowContainer,
-} from "./Buttons.style";
+} from "./styles/Buttons.style";
 
 const Primary = ({ text, left = false }) => {
   return (

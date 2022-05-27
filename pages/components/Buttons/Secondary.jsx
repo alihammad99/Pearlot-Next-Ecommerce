@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Secondary.style";
+import { Button } from "./styles/Secondary.style";
 
 const Secondary = ({ text }) => {
   return <Button>{text}</Button>;

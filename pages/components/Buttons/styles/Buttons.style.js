@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Image from "next/image";
 
 export const PrimaryButton = styled.button`
@@ -35,7 +35,7 @@ export const BtnContainer = styled.div`
   background: none;
   position: relative;
   width: 9.375rem;
-  transform: ${(props) => (props.left && "translateX(42px)")};
+  transform: ${(props) => props.left && "translateX(42px)"};
   &:hover ${ArrowContainer} {
     left: -50px;
   }
