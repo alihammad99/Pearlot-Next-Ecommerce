@@ -75,14 +75,19 @@ export const CategImage = styled(Image)`
   border-radius: ${(props) =>
     props.fullRounded ? "15rem" : props.topRounded ? "15rem 15rem 0 0" : "0"};
   object-fit: cover;
-  object-position: ${(props) => props.top && 'top'};
+  object-position: ${(props) => (props.top ? "top" : "bottom")};
+  transition: all 0.7s ease-out;
+  &:hover {
+    border-radius: 0;
+    transform: ${(props) => (props.wide ? "scale(1.04) translateY(-4rem)" : "scale(1.05)")};
+  }
 `;
 
 export const Title = styled.h5`
   font-size: 0.933rem;
 `;
 
-export const Arrow = styled(Image)`
+export const Arrow = styled.img`
   height: 7px;
   width: 27px;
   min-width: 27px;

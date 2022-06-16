@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
 import Container from "../Layout/Container";
-import { qn } from "../Card/Details";
 import {
   Bg,
   ProductsGrid,
@@ -13,8 +12,7 @@ import {
 } from "./styles/Products.style";
 
 const Products = () => {
-  let qnContext = useContext(qn);
-  console.log(qnContext.quantity);
+
   return (
     <Bg>
       <Container>

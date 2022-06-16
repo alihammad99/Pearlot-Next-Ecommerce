@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Image from "next/image";
 
 export const PrimaryButton = styled.button`
@@ -40,3 +40,5 @@ export const BtnContainer = styled.div`
     left: -50px;
   }
 `;
+
+
