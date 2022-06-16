@@ -1,4 +1,3 @@
-import { client } from "../lib/sanity";
 import Nav from "../components/Layout/Nav";
 import Hero from "../components/Home/Hero";
 import Favorites from "../components/Home/Favorites";
@@ -9,7 +8,6 @@ import Footer from "../components/Layout/Footer";
 import Cursor from "../components/Cursor";
 import { data } from "../lib/data";
 export default function Home({ products }) {
-  console.log(data)
   return (
     <div>
       <Cursor />
@@ -33,13 +31,4 @@ export default function Home({ products }) {
       <Footer home />
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const products = await client.fetch(`*[_type == "product"]`);
-  return {
-    props: {
-      products,
-    },
-  };
 }
