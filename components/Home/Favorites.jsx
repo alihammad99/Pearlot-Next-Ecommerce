@@ -6,9 +6,11 @@ import {
   CardTitle,
   CardPrice,
   Cards,
+  Button,
+  Item,
 } from "./styles/Favorites.style";
 import Container from "../Layout/Container";
-const Favorites = ({title}) => {
+const Favorites = ({ title }) => {
   return (
     <Container>
       <div>
@@ -17,7 +19,20 @@ const Favorites = ({title}) => {
           <Primary text="See All" />
         </TitleContainer>
         <Cards>
-          <div>
+          <Item style={{ position: "relative", overflow: "hidden" }}>
+            <div
+              style={{
+                position: "absolute",
+                bottom: 54,
+                left: 0,
+                zIndex: 10,
+                overflow: "hidden",
+                width: "100%",
+              }}
+            >
+              <Button className="button">Add to Card</Button>
+            </div>
+
             <div>
               <CardImage
                 src="/favorites/earings.png"
@@ -27,8 +42,20 @@ const Favorites = ({title}) => {
             </div>
             <CardTitle>Simple & Elegant Earings</CardTitle>
             <CardPrice>$42</CardPrice>
-          </div>
-          <div>
+          </Item>
+          <Item>
+            <div
+              style={{
+                position: "absolute",
+                bottom: 54,
+                left: 0,
+                zIndex: 10,
+                overflow: "hidden",
+                width: "100%",
+              }}
+            >
+              <Button className="button">Add to Card</Button>
+            </div>
             <div>
               <CardImage
                 src="/favorites/necklaces.jpg"
@@ -38,14 +65,26 @@ const Favorites = ({title}) => {
             </div>
             <CardTitle>Luxury Necklace</CardTitle>
             <CardPrice>$42</CardPrice>
-          </div>
-          <div>
+          </Item>
+          <Item>
+            <div
+              style={{
+                position: "absolute",
+                bottom: 54,
+                left: 0,
+                zIndex: 10,
+                overflow: "hidden",
+                width: "100%",
+              }}
+            >
+              <Button className="button">Add to Card</Button>
+            </div>
             <div>
               <CardImage src="/favorites/rings.jpg" width="364" height="364" />
             </div>
             <CardTitle>Fascinating Ring</CardTitle>
             <CardPrice>$42</CardPrice>
-          </div>
+          </Item>
         </Cards>
       </div>
     </Container>

@@ -1,5 +1,16 @@
 import React from "react";
-
+import {
+  Photo,
+  PhotoContainer,
+  Price,
+  Product,
+  ProductCard,
+  ProductCategory,
+  ProductContainer,
+  ProductTitle,
+  Quantity,
+  TextContainer,
+} from "./styles/ProductsContainer.style";
 const ProductsContainer = () => {
   return (
     <div>

@@ -1,4 +1,4 @@
-import React, { useState, createContext } from "react";
+import React, { createContext } from "react";
 import Container from "../Layout/Container";
 import Count from "../Buttons/Count";
 import Secondary from "../Buttons/Secondary";
@@ -19,7 +19,6 @@ import {
 
 export const qn = createContext();
 const Details = () => {
-  const [quantityNumber, setQuantityNumber] = useState({quantity: 1});
 
   return (
     <>
@@ -58,15 +57,13 @@ const Details = () => {
               pearl necklace sets, to earrings, we've got the pieces to add a
               dose of luxury to your looks.
             </Delivery>
-            <qn.Provider value={quantityNumber}>
               <Quantity>
                 <span>Quantity</span>
                 <ButtonsContainer>
-                  <Count value={quantityNumber} setValue={setQuantityNumber} />
+                  <Count />
                   <Secondary text="Add to Cart" />
                 </ButtonsContainer>
               </Quantity>
-            </qn.Provider>
           </RightSide>
         </FlexBox>
       </Container>

@@ -120,6 +120,7 @@ const Categories = () => {
                   src="/princessCollection2.jpg"
                   width={1280}
                   height={854}
+                  wide
                   placeholder="blur"
                   blurDataURL="/princessCollection-blure"
                   layout="responsive"

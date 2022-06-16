@@ -16,6 +16,7 @@ html,
 body {
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   background-color: #f3e9e0;
+  cursor: default;
 }
 
 h1,
@@ -39,4 +40,15 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #f3e9e0;
+  background: var(--dark-red);
+}
+
+::selection {
+  color: #f3e9e0;
+  background: var(--dark-red);
 }
