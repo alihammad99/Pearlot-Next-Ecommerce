@@ -1,6 +1,6 @@
 import React from "react";
-import Details from "../components/card/Details";
-import { Bg } from "../components/card/styles/Details.style";
+import Details from "../components/Card/Details";
+import { Bg } from "../components/Card/styles/Details.style";
 import Nav from "../components/Layout/Nav";
 import Favorites from "../components/Home/Favorites";
 import Footer from "../components/Layout/Footer";
