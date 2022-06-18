@@ -25,10 +25,11 @@ const Cursor = () => {
         height: 7,
         width: 7,
         borderRadius: "50%",
-        backgroundColor: "rgba(180, 50, 50)",
-        mixBlendMode: "diffrence",
+        backgroundColor: "rgba(50, 200, 200)",
+        mixBlendMode: "difference",
         transition: "all 0.095s linear",
-        zIndex: 100
+        zIndex: 100,
+        pointerEvents: "none",
       }}
     ></div>
   );
